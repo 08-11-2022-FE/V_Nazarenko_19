@@ -1,0 +1,294 @@
+body {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  max-width: 81.25%;
+  height: 80px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header > img {
+  max-width: 200px;
+}
+
+.l-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem 1.5rem;
+}
+
+.nav__button {
+  display: none;
+}
+
+.nav__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu__item {
+  margin-left: 5rem;
+}
+.menu__item > a {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 21px;
+  color: #242d35;
+  margin-bottom: 15px;
+  text-decoration: unset;
+}
+.menu__item > a:hover {
+  color: #0070d1;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
+}
+
+.divider {
+  margin: unset;
+}
+
+.main__container {
+  max-width: 81.25%;
+  padding: 100px 0;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 40px;
+}
+
+.c-main__subtitle {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #7690a8;
+  margin-bottom: 15px;
+}
+
+.c-main__title {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 52px;
+  letter-spacing: 0.2px;
+  color: #16133d;
+}
+
+.main__card_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+}
+.main__card_container > svg {
+  margin: 0 2.5641025641% 2.5641025641% 0;
+}
+.main__card_container > svg:hover > .fill-e1f4f5 {
+  fill: #e1f4f5;
+}
+.main__card_container > svg:hover > .fill-f4feff {
+  fill: #f4feff;
+}
+.main__card_container > svg:hover > .fill-cfeff2 {
+  fill: #caeff2;
+}
+.main__card_container > svg:hover > .fill-52c29d {
+  fill: #52c29d;
+}
+.main__card_container > svg:hover > .fill-caeff2 {
+  fill: #caeff2;
+}
+.main__card_container > svg:hover > .fill-border {
+  stroke: #3db370;
+}
+
+footer {
+  background: #16133d;
+}
+
+.footer__container {
+  max-width: 81.25%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2.7777777778% 0;
+  gap: 40px;
+}
+
+.footer__logo_container > svg {
+  height: 35px;
+  width: 200px;
+}
+
+.icons__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 10px;
+}
+
+.icons__item {
+  position: relative;
+  width: 38px;
+}
+
+.icons__container > div > svg {
+  height: 38px;
+  width: 38px;
+}
+
+.l-icons__position {
+  position: absolute;
+  right: 1%;
+  z-index: 1;
+}
+
+.icons__container > div > svg:hover {
+  -webkit-filter: invert(55%) sepia(69%) saturate(384%) hue-rotate(93deg) brightness(94%) contrast(88%);
+          filter: invert(55%) sepia(69%) saturate(384%) hue-rotate(93deg) brightness(94%) contrast(88%);
+}
+
+@media screen and (max-width: 1060px) {
+  .nav__menu {
+    position: fixed;
+    left: -100%;
+    top: 5rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    -webkit-box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+  .nav__menu.active {
+    left: 0;
+  }
+  .menu__item {
+    margin: 2.5rem 0;
+  }
+  .nav__button {
+    display: block;
+    cursor: pointer;
+  }
+  .nav__button.active .bar:nth-child(1) {
+    -webkit-transform: translateY(8px) rotate(45deg);
+            transform: translateY(8px) rotate(45deg);
+  }
+  .nav__button.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .nav__button.active .bar:nth-child(3) {
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+            transform: translateY(-8px) rotate(-45deg);
+  }
+}
+@media screen and (max-width: 960px) {
+  .main__card_container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media screen and (max-width: 800px) {
+  header {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .main__container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .c-main__subtitle {
+    text-align: center;
+  }
+  .c-main__title {
+    text-align: center;
+  }
+  .main__card_container {
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
+  }
+  .main__card_container > svg {
+    width: 60%;
+    height: auto;
+  }
+  .footer__logo_container > svg {
+    display: block;
+    margin: 0 auto;
+  }
+  .icons__container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  .main__card_container {
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
+  }
+  .main__card_container > svg {
+    width: 100%;
+    height: auto;
+  }
+}
